@@ -17,7 +17,7 @@
     <% end if can?(:admin, Dish::Ingredient) %>
 
     <%= content_tag :li, class: ('active' if current == :nutritions) do %>
-      <%= link_to_with_icon 'list-alt', Spree.t(:nutritions), admin_product_products_nutritions_url(@product) %>
+      <%= link_to_with_icon 'list-alt', Spree.t(:nutrition), admin_product_products_nutritions_url(@product) %>
     <% end if can?(:admin, Dish::Nutrition) %>
 <%
 =begin %>
