@@ -2,10 +2,16 @@
   <%= tab :products, :match_path => '/products' %>
   <%= tab :dish_types, :match_path => '/dish_types' %>
   <%= tab :ingredients, :match_path => '/ingredients' %>
-  <%= tab :nutritions, :match_path => '/nutritions' %>
+  <li class="sidebar-menu-item"><a href="/admin/nutritions">Nutrition</a></li>
+  <li class="sidebar-menu-item"><a href="/admin/available_ons">Available On</a></li>
+ <%
+=begin %>
   <%= tab :option_types, :match_path => '/option_types' %>
   <%= tab :properties %>
   <%= tab :prototypes %>
   <%= tab :taxonomies %>
   <%= tab :taxons %>
+  <%
+=end %>
 </ul>
+
