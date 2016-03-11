@@ -10,6 +10,12 @@
   </ul>
 <% end %>
 
+<% if Spree.user_class && can?(:admin, Spree.user_class) %>
+  <ul class="nav nav-sidebar">
+    <%= tab *Spree.t(:boxes),  url: admin_boxes_path, icon: 'th' %>
+  </ul>
+<% end %>
+
 <% if can? :admin, Spree::Admin::ReportsController %>
   <ul class="nav nav-sidebar">
     <%= tab *Spree::BackendConfiguration::REPORT_TABS, icon: 'file'  %>
